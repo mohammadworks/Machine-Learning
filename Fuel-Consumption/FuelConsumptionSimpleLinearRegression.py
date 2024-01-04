@@ -13,7 +13,7 @@ selected_data_frame = data_frame[
         'CO2EMISSIONS'
     ]
 ]
-mask = np.random.rand(len(selected_data_frame)) < 0.8
+mask = np.random.rand(len(data_frame)) < 0.8
 train = selected_data_frame[mask]
 test = selected_data_frame[~mask]
 regression = linear_model.LinearRegression()
